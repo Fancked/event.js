@@ -1,0 +1,24 @@
+{
+  "name": "event.js",
+  "version": "1.0.0",
+  "description": "基于原生js开发，提供关于事件的一些api",
+  "main": "/src/events.js",
+  "dependencies": {
+    "vuepress": "^1.5.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fancked/event.js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fancked/event.js/issues"
+  },
+  "homepage": "https://github.com/Fancked/event.js#readme"
+}

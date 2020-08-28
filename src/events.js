@@ -16,7 +16,6 @@
     }
     return this._addEventListener(type, event, useCapture);
   };
-
   Element.prototype.removeEventListener = function (type, event, useCapture) {
     if (events && events.length !== 0) {
       for (let i in events) {
@@ -57,7 +56,6 @@
   };
   window.getEventsByTarget = function (target, simplify = DefaultSimple, origin = events) {
     let result = clone(origin);
-
     function dealresult(targets) {
       let temp = [];
       targets.forEach(tgt => {
@@ -136,7 +134,7 @@
     }
     return result;
   };
-  function getEventsByUse(useCapture, simplify = DefaultSimple, origin = events) {
+  function getEventsByUseCapture(useCapture, simplify = DefaultSimple, origin = events) {
     let result = clone(origin);
     if (useCapture) {
       result = dealevents(origin, 'useCapture', useCapture);
@@ -160,7 +158,7 @@
           result = window.getEventsByEvent(obj[key], simplify, result);
           break;
         case 'useCapture':
-          result = getEventsByUse(obj[key], simplify, result);
+          result = getEventsByUseCapture(obj[key], simplify, result);
         default:
           throw new Error(key + ' is not exist');
       }
