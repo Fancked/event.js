@@ -1,4 +1,6 @@
 module.exports = {
+  base: '/',
+  dest: 'dist',
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },

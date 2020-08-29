@@ -88,7 +88,7 @@ HTML DOM 元素对象，本次事件绑定的对象
 
 ### window.getEventsByType(type, simplify, origin)
 
-**功能：**获取当前页面所有绑定事件类型为选定值的事件
+**功能：** 获取当前页面所有绑定事件类型为选定值的事件
 
 **参数：**
 
