@@ -1,5 +1,5 @@
 module.exports = {
-  base: '/event.js',
+  base: '/event.js/',
   dest: 'dist',
   themeConfig: {
     nav: [
